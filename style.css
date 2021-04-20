@@ -30,7 +30,7 @@ body {
 	text-align: center;
 }
 
-.restart-btn {
+.header .btn {
 	display: none;
 	background: var(--light-color);
 	color: #333;
@@ -41,8 +41,11 @@ body {
 	border: none;
 	margin-bottom: 1rem;
 }
+.header .btn a {
+	text-decoration: none;
+}
 
-.restart-btn:hover {
+.header .btn:hover {
 	background: var(--primary-color);
 	color: #fff;
 }
@@ -56,86 +59,12 @@ body {
 	margin-bottom: 1rem;
 }
 
-.score {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	font-size: 1.2rem;
-	color: #fff;
-}
-
-.score p:first-child {
-	background: var(--primary-color);
-}
-
-.score p:last-child {
-	background: var(--dark-color);
-}
-
-.choices {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 2rem;
-	margin-top: 3rem;
-	text-align: center;
-}
-
-.choice {
-	cursor: pointer;
-}
-
-.choice:hover {
-	color: var(--primary-color);
-}
-
 .text-win {
 	color: var(--win-color);
 }
 
 .text-lose {
 	color: var(--lose-color);
-}
-
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	overflow: auto;
-	background: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-	background: #fff;
-	text-align: center;
-	margin: 10% auto;
-	width: 350px;
-	border-radius: 10px;
-	padding: 3rem;
-	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-	animation-name: modalopen;
-	animation-duration: var(--modal-duration);
-}
-
-.modal-content h1 {
-	margin-bottom: 1rem;
-}
-
-.modal-content p {
-	font-size: 1.2rem;
-	margin-top: 1rem;
-}
-
-@keyframes modalopen {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
 }
 
 @media (max-width: 700px) {
